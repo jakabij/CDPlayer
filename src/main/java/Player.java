@@ -2,13 +2,10 @@ public class Player {
     Writer writer;
     CD cd;
     enum playerMode{
-        PLAY,
-        STOP,
-        NEXT,
-        PREV,
-        SHOW
+        Spotify,
+        Default
     }
-    String mode;
+    playerMode mode;
 
     public void next(){
 
@@ -38,7 +35,7 @@ public class Player {
         this.cd = cd;
     }
 
-    public void setMode(String playerMode){
-        this.mode = playerMode;
+    public void setMode(playerMode mode){
+        this.mode = mode;
     }
 }
